@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Of Indian Oceon</title>
+    <link rel="stylesheet" href="todolist.css">
+    <style>
+        .container {
+            max-width: 900px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid black;
+            padding: 10px;
+            overflow: scroll;
+            margin-top: 100px;
+        }
+        h1 {
+        	padding-top: 40px;
+          text-align: center;
+        }
+        .text,.edit{
+          height: 50px;
+          width:700px;
+          font-size: 16px;
+        }
+        .submit,.update{
+          height: 50px;
+          width: 100px;
+          margin-left: 30px;
+        }
+        .edit1,.delete{
+          height: 20px;
+          width: 50px;
+          font-size: 16px;
+        }
+        button {
+          border: none;
+          color: white;
+          padding: 10px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin-left: 20px;
+        }
+        li{
+          margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!--First navigation bar-->
+    <header class="header1">
+        <ul class="tabs1">
+          <li class="li1"><a href = "Pearl Of Indian Oceon.html" target="_self">Home</a></li>
+          <li class="li1"><a href = "aboutsl.html" target="_self">About SL</a></li>
+          <li class="li1"><a href = "tourismnews.html" target="_self">Tourism News</a></li>
+          <li class="li1"><a href = "todolist.html" target="_self">To Do List</a></li>
+          <li class="li1"><a href = "contactus.html" target="_self">Contact us</a></li>
+          <form id="frmSearch" class="search2" method="get" action="default.html">
+            <input class="search2" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255" autocomplete="off" placeholder="Type to search" />
+            <input class="search1" type="submit" name="submition" value="Search" />
+            <input class="search2" type="hidden" name="sitesearch" value="default.html" />
+            </form>
+            <script type="text/javascript">
+                document.getElementById('frmSearch').onsubmit = function() {
+                    window.location = 'http://www.google.com/search?q=' + document.getElementById('txtSearch').value;
+                    return false;
+                }
+            </script>
+        </ul>
+    </header>
+     <!--Second navigation bar-->
+     <header class="header2">
+        <ul class="tabs2">
+            <div class="dropdown1">
+                <li class="li2">Nothern Province</li>
+                    <div class="dropdown-content1">
+                        <a href="jaffna.html" target="_blank">Jaffna</a>
+                        <a href="mullaitivu.html"  target="_blank">Mullaitivu</a>
+                        <a href="killinochchi.html"  target="_blank">Killinochchi</a>
+                        <a href="mannar.html"  target="_blank">Mannar</a>
+                        <a href="vavuniya.html"  target="_blank">Vavuniya</a>
+                    </div>
+            </div>    
+            <div class="dropdown2">
+                <li class="li2">North Central Province</li>
+                    <div class="dropdown-content2">
+                        <a href="anuradhapura.html"  target="_blank">Anuradhapura</a>
+                        <a href="polonnaruwa.html" target="_blank">Polonnaruwa</a>
+                    </div>
+            </div>
+            <div class="dropdown3">
+                <li class="li2">Eastern Province</li>
+                    <div class="dropdown-content3">
+                        <a href="trincomalee.html"  target="_blank">Trincomalee</a>
+                        <a href="batticolao.html"  target="_blank">Batticolao</a>
+                        <a href="ampara.html"  target="_blank">Ampara</a>
+                    </div>
+            </div>
+            <div class="dropdown4">
+               <li class="li2">Central Province</li>
+                    <div class="dropdown-content4">
+                        <a href="mathale.html"  target="_blank">Mathale</a>
+                        <a href="kandy.html"  target="_blank">Kandy</a>
+                        <a href="nuwaraeliya.html"  target="_blank">Nuwara Eliya</a>
+                    </div>
+            </div>
+            <div class="dropdown5">
+                <li class="li2">Uva Province</li>
+                    <div class="dropdown-content5">
+                        <a href="badulla.html"  target="_blank">Badulla</a>
+                        <a href="monaragala.html"  target="_blank">Monaragala</a>
+                    </div>
+            </div>
+            <div class="dropdown6">
+                <li class="li2">Sabaragamuwa Province</li>
+                    <div class="dropdown-content6">
+                        <a href="kegalla.html"  target="_blank">Kegalla</a>
+                        <a href="Ratnapura.html" target="_blank">Ratnapura</a>
+                    </div>
+            </div>
+            <div class="dropdown7">
+                <li class="li2">North Western Province</li>
+                    <div class="dropdown-content7">
+                        <a href="puttalam.html" target="_blank">Puttalam</a>
+                        <a href="kurunegala.html" target="_blank">Kurunegala</a>
+                    </div>
+            </div>
+            <div class="dropdown8">
+                <li class="li2">Western Province</li>
+                    <div class="dropdown-content8">
+                        <a href="gampaha.html" target="_blank">Gampaha</a>
+                        <a href="colombo.html"  target="_blank">Colombo</a>
+                        <a href="kaluthara.html"  target="_blank">Kaluthara</a>
+                    </div>
+            </div>
+            <div class="dropdown9">
+                <li class="li2">Southern Province</li>
+                    <div class="dropdown-content9">
+                        <a href="galle.html" target="_blank">Galle</a>
+                        <a href="mathara.html" target="_blank">Mathara</a>
+                        <a href="hambantota.html" target="_blank">Hambantota</a>
+                    </div>
+            </div>
+        </ul>
+    </header>
+    <h1 class="topic1">Enjoy your life. Plan your <br>Todo List</h1>
+    <div id="app" class="container">
+        <h1>Todo List</h1>
+
+        <div v-if="!isEditing">
+            <input type="text" v-model="todo" class="text" placeholder="Type your task">
+            <input type="submit" value="Add" @click="storeTodo" class="submit">
+        </div>
+        <div v-else>
+            <input type="text" v-model="todo" class="edit" placeholder="Edit your task">
+            <input type="submit" value="Update" @click="updateTodo" class="update">
+        </div>
+
+        <ol>
+            <li v-for="(todo, index) in todos">
+                {{ todo }}
+                <button @click="editTodo(index, todo)" style="background-color: green;" >Edit</button>
+                <button @click="removeTodo(index)" style="background-color: red;" >Delete</button>
+            </li>
+        </ol>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            
+            data: {
+                isEditing: false,
+                todo: '',
+                todos: [],
+                selectedTodo: null
+            },
+            
+            methods: {
+                storeTodo() {
+                    this.todos.push(this.todo)
+                    this.todo = ''
+                },
+
+                removeTodo(index) {
+                    this.todos.splice(index, 1)
+                },
+
+                updateTodo() {
+                    this.todos.splice(this.selectedIndex, 1, this.todo)
+                    this.todo = ''
+                    this.isEditing = false
+                },
+
+                editTodo(index, todo) {
+                    this.isEditing = true
+                    this.todo = todo
+                    this.selectedIndex = index
+                }
+            }
+        })
+    </script>
+<div class="suggestions">
+    <h1>Suggestions to plan your day</h1>
+    <a href="https://www.srilanka.travel/pilgrimage">Pilgrimage</a>
+    <a href="https://www.srilanka.travel/bliss-nature-trails&article=56">Ayurveda</a>
+    <a href="https://www.srilanka.travel/things-to-see">Things to see</a>
+    <a href="https://www.srilanka.travel/eco-tourism">Eco-Tourism</a>
+    <a href="https://www.srilanka.travel/shopping">Shopping</a>
+    <a href="https://www.srilanka.travel/night-life">Night Life</a>
+    <a href="https://www.srilanka.travel/gemstone-srilanka">The Island of Gem</a>
+    <a href="https://www.srilanka.travel/spa-and-wellness-centers">Spa & Wellness</a>
+    <a href="https://www.srilanka.travel/restaurants">Restaurants</a>
+    <a href="https://www.srilanka.travel/tourist-shops">Tourist Shops</a>
+    <a href="https://www.srilanka.travel/spice-gardens">Spice Gardens</a>
+    <a href="https://www.srilanka.travel/eating-places">Tourist Friendly Eating</a>
+    </div>
+
+<!--Chat-->
+<button class="chat" onclick="openForm()">Chat</button>
+
+<div class="form" id="myForm">
+  <form class="form-container">
+    <h1>Chat</h1>
+
+    <label for="message"><b>Message</b></label>
+    <textarea placeholder="Type your message.." name="message" required></textarea>
+
+    <button type="submit" class="send">Send</button>
+    <button type="button" class="close" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+    <!--footer-->
+<footer class="footer">
+    <div class="part1">
+        <p>Tourism Hotline</p>
+        <p>1912</p>
+        <p>Ambulance Service</p>
+        <p>1990</p>
+        <br>
+        <br>
+
+    </div>
+
+    <div class="part2">
+     <a href="https://www.sltda.gov.lk/" target="_blank">Sri Lanka Tourism Development Authority</a><br>
+     <a href="https://meetinsrilanka.com/" target="_blank">Sri Lanka Tourism Convention Bureau</a><br>
+     <a href="https://www.slithm.edu.lk/" target="_blank">Sri Lanka Institute of Tourism & Hotel Management</a><br>
+     <a href="https://www.thasl.lk/" target="_blank">Tourist Hotels Association of Sri Lanka</a><br>
+     <a href="https://www.tourismmin.gov.lk/" target="_blank">Ministry of Tourism</a><br>
+     <a href="https://www.srilankan.com/" target="_blank">SriLankan Airlines</a><br>
+     <a href="https://www.airport.lk/" target="_blank">Sri Lanka Airport and Aviation Services</a><br>
+     <a href="https://eta.gov.lk/slvisa/" target="_blank">Department of Immigration and Emigration</a><br>
+     <a href="https://eta.gov.lk/slvisa/" target="_blank">Electronic Travel Authorization System</a><br>
+     <a href="https://www.slaito.com/" target="_blank">Sri Lanka Association of Inbound Tour Operators</a><br><br><br>
+    </div>
+    <hr>
+    <div class="part3">
+        <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook-icon.png" alt="facebook" height="30px" width="30px" style="padding: 5px;"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube-icon.png" alt="youtube" height="30px" width="30px" style="padding: 5px;"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png" alt="instagram" height="30px" width="30px" style="padding: 5px;"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twitter-icon.png" alt="twitter" height="30px" width="30px" style="padding: 5px;"></a>
+        <p>© 2021 All Rights Reserved by Sri Lanka Tourism Promotion Bureau.</p>
+
+    </div>
+
+</footer>
+</body> 
+</html>
